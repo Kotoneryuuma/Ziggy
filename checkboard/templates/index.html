@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="mystyle.css">
+</head>
+<body>
+    <style>
+        *{
+            margin:0px;
+	        padding: 0px;
+        }
+        .color1{
+            background-color: blue;
+            width: 30px;
+            height: 30px;
+            display: inline-block;
+            vertical-align: top;
+        }
+        .color2{
+            background-color: red;
+            width: 30px;
+            height:30px;
+            display: inline-block;
+            vertical-align: top;
+        }
+        
+    </style>
+    <h1>6 by 6 matrix - refactoring</h1>
+    <div>
+    {% for i in range(0,times): %}
+        <div>
+            {% for j in range(0,times): %}
+            <div class='color{{(i+j)%2+1}}'></div>
+            {% endfor %}
+        </div>
+    {% endfor %}
+    </div>
+
+
+   
+
+
+    
+</body>
+</html>
